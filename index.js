@@ -20,7 +20,7 @@ app.use(
 );
 
 // Optional: Pre-flight for all routes
-app.options("*", cors());
+app.options("/*path", cors());
 
 app.get("/", async (req, res) => {
   try {
